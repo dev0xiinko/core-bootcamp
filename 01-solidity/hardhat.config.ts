@@ -23,7 +23,9 @@ const config: HardhatUserConfig = {
     core_testnet: {
       url: "https://rpc.test2.btcs.network",
       chainId: 1114,
-      accounts: [PRIVATE_KEY]
+      accounts: [PRIVATE_KEY],
+      gasPrice: 50000000000, // 50 gwei
+      gas: 500000 // gas limit
     }
   }
 };
