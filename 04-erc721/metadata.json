@@ -1,0 +1,28 @@
+{
+  "name": "Core Connect Bootcamp NFT #1",
+  "description": "A special NFT created during the Core Connect Bootcamp Philippines",
+  "image": "https://ipfs.io/ipfs/YOUR_IMAGE_CID",
+  "external_url": "https://coreconnect.dev",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Blue"
+    },
+    {
+      "trait_type": "Series",
+      "value": "Bootcamp"
+    },
+    {
+      "trait_type": "Location",
+      "value": "Philippines"
+    },
+    {
+      "trait_type": "Year",
+      "value": 2024
+    },
+    {
+      "trait_type": "Edition",
+      "value": "First"
+    }
+  ]
+}
