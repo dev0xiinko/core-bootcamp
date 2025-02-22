@@ -7,14 +7,23 @@ import "@nomicfoundation/hardhat-toolbox";
 
 dotenvConfig({ path: resolve(__dirname, "./.env") });
 
-const {PRIVATE_KEY} = process.env
+const PRIVATE_KEY = process.env.PRIVATE_KEY ?? "NO_PRIVATE_KEY";
+
 const config: HardhatUserConfig = {
-  solidity: "0.8.28",
+  solidity: {
+    version: "0.8.28",
+    settings: {
+      optimizer: {
+        enabled: true,
+        runs: 200
+      }
+    }
+  },
   networks: {
     core_testnet: {
-      accounts:[PRIVATE_KEY],
-      url:"https://rpc.test2.btcs.network",
-      chainId: 1114
+      url: "https://rpc.test2.btcs.network",
+      chainId: 1114,
+      accounts: [PRIVATE_KEY]
     }
   }
 };
