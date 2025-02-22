@@ -7,7 +7,7 @@ import "@nomicfoundation/hardhat-toolbox";
 
 dotenvConfig({ path: resolve(__dirname, "./.env") });
 
-const PRIVATE_KEY = process.env.PRIVATE_KEY ?? "0000000000000000000000000000000000000000000000000000000000000001";
+const PRIVATE_KEY = process.env.PRIVATEKEY ?? "0000000000000000000000000000000000000000000000000000000000000001";
 
 const config: HardhatUserConfig = {
   solidity: {

@@ -1,23 +1,19 @@
-import { ethers } from "hardhat";
+import hre from 'hardhat'
+import { CounterSmartContract__factory } from '../typechain-types'
 
-async function main() {
-  const Counter = await ethers.getContractFactory("CounterSmartContract");
-  console.log("Deploying Counter contract...");
-  const counter = await Counter.deploy();
-  await counter.waitForDeployment();
 
-  const address = await counter.getAddress();
-  console.log("Counter deployed to:", address);
+async function Main() {
 
-  // Verify the contract works
-  await counter.increment();
-  const count = await counter.getCount();
-  console.log("Counter value after increment:", count.toString());
+  const contractFactory = await hre.ethers.getContractFactory("CounterSmartContract");
+  const deployment = await contractFactory.deploy();
+  await deployment.waitForDeployment();
+
+  console.log(`${deployment.target}`);
+  
+  // const contractFactory = await hre.ethers.getContractFactory(CounterSmartContract__factory)
+  // const counter = await contractFactory.deploy();
+  // await counter.waitForDevelopment();
+  // console.log(`deployed to ${counter.target}`);
 }
 
-main()
-  .then(() => process.exit(0))
-  .catch((error) => {
-    console.error(error);
-    process.exit(1);
-  });
+Main()

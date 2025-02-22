@@ -1,24 +1,11 @@
 {
-  "name": "Core Connect Bootcamp NFT #1",
-  "description": "A special NFT created during the Core Connect Bootcamp Philippines",
-  "image": "https://ipfs.io/ipfs/YOUR_IMAGE_CID",
-  "external_url": "https://coreconnect.dev",
+  "name": "Son Goku",
+  "description": "A special NFT",
+  "image": "https://ipfs.io/ipfs/bafkreicpd76ad56kgb4m4bule6lhljsqosatfu2dav52bon5nsexh3up2u",
   "attributes": [
     {
-      "trait_type": "Background",
-      "value": "Blue"
-    },
-    {
-      "trait_type": "Series",
-      "value": "Bootcamp"
-    },
-    {
-      "trait_type": "Location",
-      "value": "Philippines"
-    },
-    {
-      "trait_type": "Year",
-      "value": 2024
+      "trait_type": "Type",
+      "value": "Super Saiyan Blue"
     },
     {
       "trait_type": "Edition",
