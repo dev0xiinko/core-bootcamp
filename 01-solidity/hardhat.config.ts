@@ -1,3 +1,5 @@
+import path from 'path'
+
 import { HardhatUserConfig } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
 
